@@ -1,0 +1,14 @@
+{
+  "name": "vue-video",
+  "version": "1.0.1",
+  "description": "Optimize mobile video components and try to be compatible with all types of mobile phones",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "keywords": [
+    "[vue.js,video,vue-plugin, vue-video, vue-video-optimized]"
+  ],
+  "author": "dengpeng",
+  "license": "ISC"
+}
