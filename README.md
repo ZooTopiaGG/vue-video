@@ -1,12 +1,12 @@
 # vue-toast
-  基于vue2开发的移动端toast插件
+  基于vue2开发的移动端 视频优化插件
 ## 使用
 #### 安装：
-    npm install vue-toast-animation -S
+    npm install vue-video-optimized -S
 #### 引入：
-    import Toast from 'vue-toast-animation';
-    import 'vue-toast-animation/lib/index.css';
-    Vue.use(Toast)
+    import Video from 'vue-video-optimized';
+    import 'vue-video-optimized/lib/index.css';
+    Vue.use(Video)
 #### 注意：
     vue-cli2 需要配置 在webpack.base.conf.js：
     ```
@@ -28,46 +28,21 @@
     ```
 #### 在组件中使用：
   ```
-    <template>
-      <div class="hello">
-        <button class="toast" @click="Toast">Toast</button>
+  <template>
+    <div class="hello">
+      <div v-video="{ selector: 'video' }">
+        <video 
+          src="http://video.tiejin.cn/2aafd3e42899419fb39b0d3f8187b71c/299f933214154aa9a82e792e4f5a73bd-989b7eaa8f9e5340c5aeb24642a34b2d-ld.mp4"
+        ></video>
+        <p>视频插件</p>
+        <p>视频插件</p>
+        <video 
+          src="http://video.tiejin.cn/6cd16551fe6c47c8a8d52331dd4ea8d3/4e3cce4a937f48f884a8aa74f96a8858-a4847ad3bbfdf97b8b0ec9b57e2ff766-sd.mp4"
+        ></video>
       </div>
-    </template>
-    <script>
-    export default {
-      name: "HelloWorld",
-      methods: {
-        Toast() {
-          this.$toast("hello, world", {
-            type: "top",
-            animationType: "fadeInDown",
-            duration: "6000"
-          });
-        }
-      }
-    };
-    </script>
+    </div>
+  </template>
   ```
-  #### 配置详解：
-  * [options] options设置默认值
-  
-  #### 全局配置：
-  *   type: Toast显示的位置 String | 默认: 'top' | 可选值 'top, center,bottom';
-  *   animationType: Toast显示动画 String | 默认: 'fadeInDown' | 可选值 'fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig';
-  *   duration: Toast显示时长 String | 默认: '2500';
-    Vue.use(Toast, [options])
-  ```
-    Vue.use(Toast, {
-      type: "top",
-      animationType: "fadeInDown",
-      duration: "6000"
-    })
-  ```
-  #### 局部配置：
-  ```
-    this.$toast("hello, world", {
-      type: "top",
-      animationType: "fadeInDown",
-      duration: "6000"
-    });
-  ```
+  ### 效果图：
+  ![image][http://videos.55lover.com/WechatIMG883.jpeg]
+  ![image][http://videos.55lover.com/WechatIMG885.jpeg]
