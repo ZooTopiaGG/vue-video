@@ -1,4 +1,4 @@
-# vue-toast
+# vue-video-optimized
   基于vue2开发的移动端 视频优化插件
 ## 使用
 #### 安装：
@@ -44,5 +44,5 @@
   </template>
   ```
   ### 效果图：
-  ![image][http://videos.55lover.com/WechatIMG883.jpeg]
-  ![image][http://videos.55lover.com/WechatIMG885.jpeg]
+  ![image](http://videos.55lover.com/WechatIMG883.jpeg)
+  ![image](http://videos.55lover.com/WechatIMG885.jpeg)
