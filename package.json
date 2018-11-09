@@ -1,6 +1,6 @@
 {
   "name": "vue-video-optimized",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Optimize mobile video components and try to be compatible with all types of mobile phones",
   "main": "lib/index.js",
   "scripts": {
